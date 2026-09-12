@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  /* Forest Warm Palette */
+  --color-forest-deep: #1b3a2f;
+  --color-forest-moss: #4a7c59;
+  --color-gold-earth: #b8860b;
+  --color-cream-warm: #faf5e6;
+  --color-bark-brown: #5c4033;
+  --color-leaf-light: #8fbc8f;
+  --font-serif: 'Georgia', 'Times New Roman', serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-forest-deep);
+  background: var(--color-cream-warm);
+}
+
+/* Selection */
+::selection { background: var(--color-gold-earth); color: var(--color-cream-warm); }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--color-cream-warm); }
+::-webkit-scrollbar-thumb { background: var(--color-forest-moss); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-forest-deep); }
